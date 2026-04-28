@@ -5,5 +5,9 @@ metadata:
 spec:
   pipelineRef:
     name: tax-pipeline
-  params: []
-  workspaces: []
+  params:
+    - name: dummy
+      value: test
+  workspaces:
+    - name: workspace
+      emptyDir: {}
