@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: tax-run
+spec:
+  pipelineRef:
+    name: tax-pipeline
+  params: []
+  workspaces: []
